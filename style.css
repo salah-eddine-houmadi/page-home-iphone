@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: 0.5s;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #D32F2F;
+}
+.top{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40%;
+	height: 60%;
+	background: #B71C1C;
+	opacity: 0.7;
+}
+.main{
+	position: relative;
+	z-index: 10;
+	width: 1100px;
+    height: 550px;
+    background: #B71C1C;
+    box-shadow: 0.1px 4px 12px 2px rgba(0,0,0,0.2);
+}
+.main .fa-apple::before{
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	font-size: 45px;
+	color: #FDFEFE;
+	z-index: 25;
+}
+
+/* Navbar part */
+.navbar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #D32F2F;
+	z-index: 25;
+	opacity: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.navbar ul li{
+	list-style: none;
+	font-weight: bold;
+	font-size: 35px;
+	text-transform: capitalize;
+	color: #fff;
+	padding: 10px;
+	cursor: pointer;
+	letter-spacing: 1.5px;
+	opacity: 0.8;
+}
+.navbar ul li:hover{
+	opacity: 0.3;
+	transform: translateX(100px) scale(1.8);
+}
+.fa-th-list{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 25px;
+	color: #FDFEFE;
+	cursor: pointer;
+	z-index: 40;
+	background: rgba(255, 255, 255, 0.1);
+}
+
+/* after add active class in Navbar */
+.active{
+   opacity: 1;
+   z-index: 35;
+}
+
+/* left part */
+.left{
+	position: absolute;
+	left: 10%;
+	top: 0;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 100px 0;
+	color: #fff;
+}
+.left p:nth-child(1){
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 5px 7px;
+	width: 120px;
+	background: rgba(255, 255, 255, 0.1);
+}
+.left p:nth-child(2){
+	font-size: 35px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	position: relative;
+}
+.left p span{
+	font-size: 22px;
+	padding: 0 7px;
+	border: 2px solid #fff;
+}
+.left p:nth-child(3){
+	margin-top: 15px;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 1.8px;
+}
+.left p:nth-child(4){
+	margin: 15px 0;
+	font-size: 15px;
+	color: #fff;
+	opacity: 0.7;
+	letter-spacing: 0.7px;
+}
+
+/* right part */
+.right{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 45%;
+	height: 100%;
+	padding: 0 0 50px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.right img{
+	position: relative;
+	top: -10px;
+	left: -50px;
+	height: 550px;
+	width: 550px;
+	z-index: 20;
+}
+
+/* bottom video part */
+.buttom{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 90%;
+	height: 200px;
+	background: rgba(255, 255, 255, 0.08);
+}
+.buttom video{
+	opacity: 0.7;
+	position: absolute;
+	width: 250px;
+	height: 150px;
+	top: -3px;
+	left: 0;
+	outline: none;
+	z-index: 30;
+}
+.buttom p:not(:last-child){
+	position: absolute;
+	bottom: 35px;
+	left: 10px;
+	width: 50px;
+	height: 3px;
+	background: #ddd;
+	opacity: 0.8;
+}
+.buttom p:last-child{
+	text-transform: capitalize;
+	position: absolute;
+	bottom: 7px;
+	left: 10px;
+	color: #ddd;
+	opacity: 0.9;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+
+/* social icons part */
+.social{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 50%;
+	z-index: 30;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.social i{
+	color: #fff;
+	margin: 5px 0;
+	padding: 15px;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+.social i:hover{
+	background: #fff;
+	color: red;
+}

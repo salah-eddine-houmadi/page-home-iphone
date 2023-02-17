@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iphone_landing page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ 
+  <div class="top"></div>
+
+ <div class="main">
+ 	<i class="fa fa-apple" aria-hidden="true"></i>
+ 	<i class="fa fa-th-list" aria-hidden="true" onclick="navbar()"></i>
+ 	<div class="navbar">
+  <!--- navigation menu --->
+ 		<ul>
+ 			<li>home</li>
+ 			<li>service</li>
+ 			<li>contact</li>
+ 			<li>management</li>
+ 		</ul>
+ 	</div>
+  <!--- Left part --->
+ 	<div class="left">
+ 		<p>special edition</p>
+ 		<p>iphone X <span>R</span></p>
+ 		<p>product(red)</p>
+ 		<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using Lorem Ipsum is that it has</p>
+ 		<p>Learn more</p>
+ 	</div>
+  <!--- Right part --->
+ 	<div class="right">
+ 		<div class="social">
+ 			  <i class="fa fa-facebook" aria-hidden="true"></i>
+               <i class="fa fa-twitter" aria-hidden="true"></i>
+               <i class="fa fa-github" aria-hidden="true"></i>
+ 		</div>
+ 		<img src="img/iphone.png">
+ 	</div>
+ 	<div class="buttom">
+  <!--- Add video --->
+ 		<video src="img/video.MP4" controls="true" autoplay="on" muted="true" loop="true"></video>
+ 		<p></p>
+ 		<p>watch trailer</p>
+ 	</div>
+ </div> 
+
+
+  <!--- script for add active class --->
+
+  <script type="text/javascript">
+	function navbar(){
+		var nav = document.querySelector('.navbar');       
+        nav.classList.toggle('active');
+	}
+   </script>
+
+</body>
+</html>
